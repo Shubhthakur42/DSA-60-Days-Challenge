@@ -1,0 +1,7 @@
+Approach:
+1. Sort the array.
+2. Fix first element using loop.
+3. Fix second element using loop.
+4. Use two pointers (left and right).
+5. If sum == target → store answer.
+6. Skip duplicates.
