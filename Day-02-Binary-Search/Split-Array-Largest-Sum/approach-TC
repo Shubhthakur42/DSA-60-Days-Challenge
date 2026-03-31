@@ -1,0 +1,19 @@
+Approach:
+1. The minimum possible answer will be the maximum element in the array (low).
+2. The maximum possible answer will be the sum of the array (high).
+3. Apply Binary Search between low and high.
+4. For each mid, check if it is possible to split the array into <= k subarrays such that no subarray sum exceeds mid.
+5. If possible, store mid as answer and try to minimize more (high = mid - 1).
+6. If not possible, increase the limit (low = mid + 1).
+7. Return the minimum possible maximum sum.
+
+Algorithm (isValid function):
+- Traverse the array and keep adding elements to sum.
+- If sum > mid, start a new subarray and increase count.
+- If number of subarrays <= k, then it is a valid answer.
+
+Time Complexity: O(n log(sum))
+Explanation:
+Binary search runs log(sum) times and for each iteration we traverse the array once (O(n)).
+Space Complexity: O(1)
+No extra space is used.
