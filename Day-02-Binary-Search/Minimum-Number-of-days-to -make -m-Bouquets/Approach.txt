@@ -1,0 +1,23 @@
+Problem: Minimum Number of Days to Make m Bouquets
+Approach:
+1. The minimum possible day = 1.
+2. The maximum possible day = maximum value in bloomDay array.
+3. Apply Binary Search between low and high.
+4. For each mid (day), check if we can make m bouquets.
+5. To check:
+   - Traverse the array.
+   - If bloomDay[i] <= mid, increase flower count.
+   - If flower count == k, we can make one bouquet.
+   - Reset flower count and continue.
+   - If bloomDay[i] > mid, reset flower count to 0 (because flowers must be adjacent).
+6. If number of bouquets >= m, then mid is a valid day → try smaller day.
+7. Else, increase the day.
+8. Return the minimum day.
+
+TC:
+Time Complexity: O(n log(maxDay))
+
+Explanation:
+Binary search runs log(maxDay) times and for each mid we traverse the array once (O(n)).
+
+Space Complexity: O(1)
