@@ -1,0 +1,16 @@
+Approach: Two Pointer (Greedy)
+Take two pointers:
+i = 0 (start)
+j = n - 1 (end)
+Calculate area:
+Width = j - i
+Height = min(height[i], height[j])
+Area = width × height
+Move the pointer which has smaller height, because:
+Area depends on minimum height
+If we move the larger height pointer → area will always decrease
+So we move the smaller height pointer to try getting a larger height
+Keep updating max area.
+
+Time Complexity: O(n)
+Space Complexity: O(1)
