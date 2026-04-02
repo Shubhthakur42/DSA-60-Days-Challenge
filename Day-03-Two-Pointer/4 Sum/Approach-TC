@@ -1,0 +1,17 @@
+Approach: Sorting + Two Pointer
+
+This is an extension of 3Sum.
+
+Sort the array.
+Fix first element i.
+Fix second element j.
+Use two pointers:
+k = j + 1
+l = n - 1
+Calculate sum:
+If sum == target → store quadruplet, move both pointers
+If sum > target → l--
+If sum < target → k++
+
+Time Complexity: O(n^3)
+Space Complexity: O(1) (excluding output)
