@@ -1,0 +1,16 @@
+Approach: Sorting + Two Pointer
+First, sort the array.
+Fix one element i (from 0 to n-1).
+Use two pointers:
+j = i + 1
+k = n - 1
+Calculate sum:
+If sum == 0 → store triplet, move both pointers
+If sum > 0 → decrease k
+If sum < 0 → increase j
+Skip duplicates:
+If nums[i] == nums[i-1] → continue
+After finding triplet → skip duplicate j and k
+
+Time Complexity: O(n^2)
+Space Complexity: O(1) (excluding output)
