@@ -1,0 +1,13 @@
+Approach: Two Pointer
+
+Use two pointers i and j (start and end).
+If characters match → move both pointers.
+If mismatch happens → we are allowed to delete at most one character.
+So we check:
+Skip left character → check palindrome (i+1, j)
+Skip right character → check palindrome (i, j-1)
+If any one is palindrome → return true.
+
+Complexity:
+Time Complexity: O(n)
+Space Complexity: O(1)
