@@ -1,0 +1,6 @@
+Approach:
+First I sort the array so that duplicate elements come together.
+Then I traverse the array and check if any adjacent elements are equal.
+If yes, I return true, otherwise false.
+
+Time complexity is O(n log n) due to sorting and space complexity is O(1).
