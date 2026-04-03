@@ -1,0 +1,4 @@
+First I store prefix product in the answer array.
+Then I traverse from right and multiply suffix product.
+So each index contains prefix × suffix which gives product except self.
+Time complexity is O(n) and space complexity is O(1).
