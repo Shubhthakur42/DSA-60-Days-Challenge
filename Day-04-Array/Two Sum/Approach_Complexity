@@ -1,0 +1,8 @@
+Steps:
+Run loop i from 0 to n-1
+Run loop j from i+1 to n-1
+If nums[i] + nums[j] == target
+Store indices and return
+
+Time Complexity = O(n²)
+Space Complexity = O(1)
