@@ -1,0 +1,17 @@
+Approach (Valid Parentheses)
+
+We use a stack to check if the brackets are valid.
+
+Traverse the string character by character.
+If the character is an opening bracket (, {, [:
+Push its corresponding closing bracket ), }, ] into the stack.
+If the character is a closing bracket:
+Check if the stack is empty → return false.
+Otherwise, pop from stack and check if it matches the current closing bracket.
+If not matching → return false.
+After traversal, if the stack is empty → valid parentheses.
+If stack is not empty → invalid.
+
+Complexity
+Time Complexity	O(n)
+Space Complexity	O(n)
