@@ -1,0 +1,14 @@
+Approach (Valid Palindrome)
+Convert the string to lowercase so that uppercase and lowercase letters are treated the same.
+Remove all non-alphanumeric characters (spaces, symbols, punctuation) using regex.
+Use two pointers:
+One pointer at the beginning (i)
+One pointer at the end (j)
+Compare characters at both pointers:
+If equal → move both pointers (i++, j--)
+If not equal → return false
+If all characters match → return true
+
+Type	Complexity
+Time Complexity	O(n)
+Space Complexity	O(n)
