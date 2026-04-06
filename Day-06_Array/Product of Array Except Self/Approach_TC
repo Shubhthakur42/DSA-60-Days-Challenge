@@ -1,0 +1,8 @@
+Product of Array Except Self – Approach
+Create an output array.
+Traverse from left and store prefix product in output array.
+Traverse from right and maintain suffix product.
+Multiply prefix and suffix and store in output array.
+Return the output array.
+
+TC: O(n)
