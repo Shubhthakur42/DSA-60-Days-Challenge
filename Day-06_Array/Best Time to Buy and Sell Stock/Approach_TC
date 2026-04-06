@@ -1,0 +1,8 @@
+2. Best Time to Buy and Sell Stock – Approach
+Assume the first element as the minimum price.
+Traverse the array from left to right.
+If current price is smaller → update minimum price.
+Else calculate profit = current price – minimum price.
+Update maximum profit.
+
+TC: O(n)
