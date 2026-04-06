@@ -1,0 +1,12 @@
+. Two Sum – Approach
+Create a HashMap to store array elements and their indices.
+Traverse the array.
+For each element, calculate target - current element.
+Check if this value already exists in the HashMap.
+If yes, return indices; if not, store the current element in the map
+
+
+
+Time Complexity
+TC: O(n)
+SC: O(n)
