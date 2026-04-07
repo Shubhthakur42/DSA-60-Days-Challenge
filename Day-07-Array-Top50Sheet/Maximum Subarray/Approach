@@ -1,0 +1,11 @@
+Approach (Kadane’s Algorithm)
+We traverse the array and keep a running sum currSum.
+At each index, we add the current element to currSum.
+If currSum becomes negative, we reset it to 0 (because a negative sum will reduce future subarray sums).
+We maintain another variable maxSum to store the maximum subarray sum found so far.
+At every step, update maxSum = max(maxSum, currSum).
+Initialize maxSum with the first element to handle cases where all elements are negative.
+
+Complexity
+Time Complexity: O(n)
+Space Complexity: O(1)
