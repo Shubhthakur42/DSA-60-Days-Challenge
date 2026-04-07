@@ -1,0 +1,11 @@
+Approach (Reversal Algorithm)
+We rotate the array to the right by k steps using reversal.
+First, normalize k using k = k % n to handle large values.
+Reverse the first n - k elements.
+Reverse the last k elements.
+Finally, reverse the entire array.
+This rearranges elements in-place to achieve the required rotation.
+
+Complexity
+Time Complexity: O(n)
+Space Complexity: O(1)
