@@ -1,0 +1,15 @@
+Approach (Floyd’s Cycle Detection)
+Treat the array as a linked list where:
+Index represents the current node
+Value at index represents the next node
+Since one number is duplicated, it creates a cycle in this structure.
+Use two pointers:
+slow moves one step at a time
+fast moves two steps at a time
+First, detect the meeting point inside the cycle.
+Then reset slow to the start and move both pointers one step at a time.
+The point where they meet again is the duplicate number (cycle entry).
+
+Complexity
+Time Complexity: O(n)
+Space Complexity: O(1)
