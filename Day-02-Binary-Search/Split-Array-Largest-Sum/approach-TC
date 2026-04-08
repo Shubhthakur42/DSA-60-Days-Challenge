@@ -7,6 +7,7 @@ Approach:
 6. If not possible, increase the limit (low = mid + 1).
 7. Return the minimum possible maximum sum.
 
+
 Algorithm (isValid function):
 - Traverse the array and keep adding elements to sum.
 - If sum > mid, start a new subarray and increase count.
