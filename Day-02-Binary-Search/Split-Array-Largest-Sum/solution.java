@@ -13,6 +13,7 @@ class Solution {
         if(count<=k) return true;
         return false;
     }
+    
     public int splitArray(int[] nums, int k) {
         int n=nums.length;
         int low=nums[0];
