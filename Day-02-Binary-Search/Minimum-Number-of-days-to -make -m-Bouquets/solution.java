@@ -10,6 +10,7 @@ class Solution {
                     bouquet++;
                     flower=0;
                 }
+                
             }
             if(bloomDay[i]>mid) flower=0;
         }
