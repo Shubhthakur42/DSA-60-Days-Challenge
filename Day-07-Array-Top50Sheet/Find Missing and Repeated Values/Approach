@@ -1,0 +1,12 @@
+Approach
+Traverse the grid.
+Use a HashSet to track visited numbers.
+If a number is already in the set → it is the repeated number.
+Otherwise:
+Add it to the set
+Add it to sum (sum of unique elements)
+Missing number = total - sum
+Return [repeated, missing]
+
+Time Complexity = O(n²)
+Space = O(n)
