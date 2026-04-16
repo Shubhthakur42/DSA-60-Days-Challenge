@@ -1,0 +1,22 @@
+🔹 Algorithm (2 Pointer Approach)
+Initialize two pointers:
+i = 0 (firstList)
+j = 0 (secondList)
+While both lists are not exhausted:
+Take intervals:
+[s1, e1] from firstList
+[s2, e2] from secondList
+Find intersection:
+start = max(s1, s2)
+end = min(e1, e2)
+If start <= end:
+Add [start, end] to result
+Move the pointer of the interval which ends first:
+If e1 < e2 → i++
+Else → j++
+Time Complexity
+Each interval is processed once
+👉 O(n + m)
+🔹 Space Complexity
+Only result list used
+👉 O(1) (excluding output)
