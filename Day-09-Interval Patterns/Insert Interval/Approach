@@ -1,0 +1,18 @@
+🔹 Algorithm
+Step 1: Insert New Interval
+Traverse all intervals.
+Insert the new interval before the first interval whose start is greater than or equal to it.
+Use a flag to ensure it is inserted only once.
+If not inserted during traversal, add it at the end.
+Step 2: Merge Intervals
+Initialize start1 and end1 from the first interval.
+Traverse remaining intervals:
+If overlapping (end1 >= start2):
+Merge → end1 = max(end1, end2)
+Else:
+Add previous interval to result
+Update start1, end1
+Add the last interval to result.
+Complexity:
+Time Complexity=O(n)
+Space Complexity=O(n) (extra list used for insertion and result)
