@@ -1,0 +1,15 @@
+Sort the intervals based on starting time.
+Initialize:
+start1 = start of first interval
+end1 = end of first interval
+Traverse remaining intervals:
+If current interval overlaps (start2 <= end1):
+Merge → update end1 = max(end1, end2)
+Else:
+Add previous interval to result
+Update start1, end1 to current interval
+Add the last interval to result.
+
+Complexity:
+TC=O(n log n)
+SC=O(n)
